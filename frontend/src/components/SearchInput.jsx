@@ -14,7 +14,7 @@ import { useEffect } from 'react';
 import useDebounce from '../hooks/useDebounce';
 
 function SearchInput({ name, setName, onSearch }) {
-  const debouncedName = useDebounce(name, 500);
+  const debouncedName = useDebounce(name, 1000);
 
   useEffect(() => {
     if (debouncedName) {
